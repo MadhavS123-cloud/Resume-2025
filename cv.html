@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,10 @@
         /* Use Inter font */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Tailwind gray-50 */
+            background-color: #f8fafc;
+            /* Tailwind gray-50 */
         }
-        
+
         /* Simple print styles */
         @media print {
             body {
@@ -23,32 +25,41 @@
                 print-color-adjust: exact;
                 background-color: #ffffff;
             }
+
             .no-print {
                 display: none;
             }
+
             .print-break-inside-avoid {
                 break-inside: avoid;
             }
+
             .print-shadow-none {
                 box-shadow: none;
             }
+
             .print-p-0 {
                 padding: 0;
             }
+
             .print-w-full {
                 width: 100%;
             }
+
             .print-max-w-none {
                 max-width: none;
             }
+
             /* Ensure links are still visible when printed */
             a {
-                color: #2563eb; /* Tailwind blue-600 */
+                color: #2563eb;
+                /* Tailwind blue-600 */
                 text-decoration: none;
             }
         }
     </style>
 </head>
+
 <body class="text-gray-800">
 
     <div class="max-w-4xl mx-auto p-4 sm:p-8 lg:p-12 print-p-0">
@@ -59,21 +70,23 @@
                     <h1 class="text-4xl font-bold text-gray-900">Madhav Sachdeva</h1>
                     <h2 class="text-xl font-medium text-blue-600 mt-1">First Year B.Tech CS Student</h2>
                     <p class="text-gray-600 mt-3 max-w-md">
-                        Enthusiastic and motivated computer science student passionate about technology and software development. Eager to learn and apply skills in real-world projects.
+                        Enthusiastic and motivated computer science student passionate about technology and software
+                        development. Eager to learn and apply skills in real-world projects.
                     </p>
                 </div>
                 <div class="mt-6 sm:mt-0 sm:text-right">
                     <ul class="space-y-1">
                         <li class="flex items-center sm:justify-end no-print">
                             <span class="text-gray-600 mr-2" id="email-text">madhavsachdeva613@gmail.com</span>
-                            <button id="copy-email-btn" title="Copy Email" class="text-gray-500 hover:text-blue-600 transition-colors">
+                            <button id="copy-email-btn" title="Copy Email"
+                                class="text-gray-500 hover:text-blue-600 transition-colors">
                                 <i data-lucide="copy" class="w-4 h-4"></i>
                             </button>
                         </li>
                         <li class="flex items-center sm:justify-end print:hidden">
                             <span class="text-gray-600 hidden print:inline">madhavsachdeva613@gmail.com</span>
                         </li>
-                        
+
                         <li class="flex items-center sm:justify-end">
                             <span class="text-gray-600 mr-2">+919779533777</span>
                             <i data-lucide="phone" class="w-4 h-4 text-gray-500"></i>
@@ -83,11 +96,14 @@
                             <i data-lucide="map-pin" class="w-4 h-4 text-gray-500"></i>
                         </li>
                         <li class="flex items-center sm:justify-end">
-                            <a href="https://github.com/MadhavS123-cloud" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline mr-2">github.com/MadhavS123-cloud</a>
+                            <a href="https://github.com/MadhavS123-cloud" target="_blank" rel="noopener noreferrer"
+                                class="text-blue-600 hover:underline mr-2">github.com/MadhavS123-cloud</a>
                             <i data-lucide="github" class="w-4 h-4 text-gray-500"></i>
                         </li>
                         <li class="flex items-center sm:justify-end">
-                            <a href="https://www.linkedin.com/in/madhav-sachdeva-362038234/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline mr-2">linkedin.com/in/madhav-sachdeva-362038234/</a>
+                            <a href="https://www.linkedin.com/in/madhav-sachdeva-362038234/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-blue-600 hover:underline mr-2">linkedin.com/in/madhav-sachdeva-362038234/</a>
                             <i data-lucide="linkedin" class="w-4 h-4 text-gray-500"></i>
                         </li>
                     </ul>
@@ -95,13 +111,55 @@
             </header>
 
             <main class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                
+
                 <div class="lg:col-span-2 space-y-10">
-                    
+
                     <section class="print-break-inside-avoid">
-                        <h3 class="text-2xl font-bold text-gray-900 border-b-2 border-gray-200 pb-2 mb-6">Personal Projects</h3>
+                        <h3 class="text-2xl font-bold text-gray-900 border-b-2 border-gray-200 pb-2 mb-6">Personal
+                            Projects</h3>
                         <div class="space-y-8">
-                            
+
+                            <div class="print-break-inside-avoid">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-gray-800">Skill Match AI</h4>
+                                        <p class="text-blue-600 font-medium">Tech Stack: Python, Flask, Gemini Pro,
+                                            GSAP, Tailwind CSS</p>
+                                    </div>
+                                    <span class="text-gray-600 font-medium whitespace-nowrap">2025</span>
+                                </div>
+                                <ul class="list-disc list-outside text-gray-700 mt-3 ml-5 space-y-1">
+                                    <li>Architected an AI-powered resume parsing and ATS score calculation system.</li>
+                                    <li>Implemented a Hiring Manager Rejection Simulator to provide honest feedback on
+                                        resume-role alignment.</li>
+                                    <li>Developed features for automated skill gap analysis, company-style fit
+                                        assessment, and match history tracking.</li>
+                                </ul>
+                            </div>
+
+                            <div class="print-break-inside-avoid">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-gray-800">Write Ease</h4>
+                                        <p class="text-blue-600 font-medium">Tech Stack: React, Gemini API, Tailwind CSS
+                                        </p>
+                                    </div>
+                                    <span class="text-gray-600 font-medium whitespace-nowrap">2024</span>
+                                </div>
+                                <ul class="list-disc list-outside text-gray-700 mt-3 ml-5 space-y-1">
+                                    <li>Developed a modern writing assistant that uses AI to improve clarity, tone, and
+                                        grammar in real-time.</li>
+                                    <li>Designed a minimalist, user-centric interface to minimize distractions during
+                                        the writing process.</li>
+                                    <li>Integrated Large Language Models to provide context-aware suggestions and
+                                        refinements.</li>
+                                    <li>Live Demo: <a href="https://replit.com/t/polaris/repls/WriteEase"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="text-blue-600 hover:underline">replit.com/t/polaris/repls/WriteEase</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                             <div class="print-break-inside-avoid">
                                 <div class="flex justify-between items-start">
                                     <div>
@@ -116,7 +174,7 @@
                                     <li>Learned about React hooks and component lifecycle.</li>
                                 </ul>
                             </div>
-                            
+
                             <div class="print-break-inside-avoid">
                                 <div class="flex justify-between items-start">
                                     <div>
@@ -128,44 +186,58 @@
                                 <ul class="list-disc list-outside text-gray-700 mt-3 ml-5 space-y-1">
                                     <li>Built a functional, dynamic to-do list application for task management.</li>
                                     <li>Implemented features for adding, deleting, and marking tasks as complete.</li>
-                                    <li>Gained experience in DOM manipulation and event handling using pure JavaScript.</li>
+                                    <li>Gained experience in DOM manipulation and event handling using pure JavaScript.
+                                    </li>
                                 </ul>
                             </div>
 
                             <div class="print-break-inside-avoid">
                                 <div class="flex justify-between items-start">
                                     <div>
-                                        <h4 class="text-lg font-semibold text-gray-800">MedAppoint - Doctor Appointment System</h4>
-                                        <p class="text-blue-600 font-medium">Tech Stack: React, Node.js (or Placeholder for Backend)</p>
+                                        <h4 class="text-lg font-semibold text-gray-800">MedAppoint - Doctor Appointment
+                                            System</h4>
+                                        <p class="text-blue-600 font-medium">Tech Stack: React, Node.js</p>
                                     </div>
                                     <span class="text-gray-600 font-medium whitespace-nowrap">2024</span>
                                 </div>
                                 <ul class="list-disc list-outside text-gray-700 mt-3 ml-5 space-y-1">
                                     <li>Designed the frontend interface for a doctor appointment booking system.</li>
-                                    <li>Implemented routing and state management to handle patient registration and booking flows.</li>
-                                    <li>Focused on creating an intuitive, user-friendly experience for scheduling appointments.</li>
+                                    <li>Implemented routing and state management to handle patient registration and
+                                        booking flows.</li>
+                                    <li>Focused on creating an intuitive, user-friendly experience for scheduling
+                                        appointments.</li>
                                 </ul>
                             </div>
 
                         </div>
                     </section>
                 </div>
-                
+
                 <div class="lg:col-span-1 space-y-10">
 
                     <section class="print-break-inside-avoid">
                         <h3 class="text-2xl font-bold text-gray-900 border-b-2 border-gray-200 pb-2 mb-6">Skills</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Java</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">CSS</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">React</span>
-                            <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Arduino</span>
-                            <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Git & GitHub</span>
-                            <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Data Structures</span>
-                            <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">OOP Concepts</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Java</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">CSS</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">React</span>
+                            <span
+                                class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Arduino</span>
+                            <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Git &
+                                GitHub</span>
+                            <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Data
+                                Structures</span>
+                            <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">OOP
+                                Concepts</span>
                         </div>
                     </section>
 
